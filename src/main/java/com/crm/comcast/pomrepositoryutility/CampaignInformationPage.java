@@ -32,14 +32,10 @@ public class CampaignInformationPage {
 		return deletbutton;
 	}
 	
-	public void campaigninformation( String campaignname)
+	public String campaigninformation()
 	{
-		if((campaigninfo.getText()).contains(campaignname))
-		{
-			System.out.println("campaign is created");
-		}else {
-			System.out.println("campaign is notcreated");
-		}
+		String text = campaigninfo.getText();
+		return text;
 	}
 	
 	public void deletcampaign() {
