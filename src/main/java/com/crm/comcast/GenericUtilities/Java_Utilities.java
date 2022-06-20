@@ -25,6 +25,7 @@ public class Java_Utilities {
 	String dd=arr[2];
 	int mm = date.getMonth();
 	String formate=dd+"-"+mm+"-"+yyyy;
+	System.out.println(formate);
 	return formate;	
 	}
 }

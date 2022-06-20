@@ -29,6 +29,6 @@ public class CreateContactTest extends Baseclass {
 		ccp.clicksave();
 
 		String actxt = cip.contactinfotext();
-		Assert.assertEquals(actxt.contains(data),false);
+		Assert.assertEquals(actxt.contains(data),true);
 	}
 }

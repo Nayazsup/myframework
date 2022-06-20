@@ -12,11 +12,13 @@ public class ListImpClass implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 Java_Utilities ju=new Java_Utilities();
-		String testname=result.getMethod().getMethodName();
+		String testname=result.getTestName()+ju.getData();
+		System.out.println(testname);
 TakesScreenshot tss=(TakesScreenshot)Baseclass.sdriver;
 		//EventFiringWebDriver edriver=new EventFiringWebDriver(Baseclass.sdriver);
+//check difference
 		File scr = tss.getScreenshotAs(OutputType.FILE);
-		File dst=new File("./screenshot/"+testname+"_"+ju.getData()+".png") ;
+		File dst=new File("./screenshot/"+testname+".png") ;
 		try {
 			FileUtils.copyFile(scr, dst);
 

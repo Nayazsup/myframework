@@ -1,5 +1,7 @@
 package com.crm.comcast.campaignTest;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.Random;
@@ -17,6 +19,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.GenericUtilities.Baseclass;
@@ -31,7 +34,7 @@ import com.crm.comcast.pomrepositoryutility.HomePage;
 import com.crm.comcast.pomrepositoryutility.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.crm.comcast.GenericUtilities.ListImpClass.class)
 public class CreateCampaignTest extends Baseclass {
 
 	@Test(groups = "smoke")
@@ -52,15 +55,9 @@ public class CreateCampaignTest extends Baseclass {
 		String data = eu.getExceldata("Sheet1", 1, 2)+oye;
 		ccp.givecampaignname(data);
 		ccp.clicksave();
+		assertEquals((cip.getCampaigninfo().getText()), "no");
 
-		if((cip.getCampaigninfo().getText()).contains(data))
-		{
-			System.out.println("campaign created");
-		}
-		else
-		{
-			System.out.println("campaign not created");
-		}	
+	
 	}
 
 }
