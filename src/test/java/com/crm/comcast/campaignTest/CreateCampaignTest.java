@@ -32,7 +32,7 @@ public class CreateCampaignTest extends Baseclass {
 		String act = cip.campaigninformation();
 		Assert.assertEquals(act.contains(data),true);
 
-	
+	//verification done
 	}
 
 }
