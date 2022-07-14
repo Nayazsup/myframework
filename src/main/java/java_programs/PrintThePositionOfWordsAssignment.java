@@ -17,6 +17,7 @@ public class PrintThePositionOfWordsAssignment {
 		for (String ch : set) {
 			int count=0;
 			for (int i = 0; i < str.length; i++) {
+				
 				if(ch.equalsIgnoreCase(str[i]))
 				{
 				count++;

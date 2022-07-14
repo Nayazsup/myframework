@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21049" started-at="2022-06-20T23:19:12 IST" finished-at="2022-06-20T23:19:33 IST">
+  <suite name="Failed suite [Failed suite [suite]]" duration-ms="76000" started-at="2022-07-11T01:32:31 IST" finished-at="2022-07-11T01:33:47 IST">
     <groups>
+      <group name="regression">
+        <method signature="CreateContactTest.doit()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="doit" class="com.crm.comcast.contactTest.CreateContactTest"/>
+        <method signature="DeletContactTest.deletit()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="deletit" class="com.crm.comcast.contactTest.DeletContactTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateCampaignTest.createcamp()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="createcamp" class="com.crm.comcast.campaignTest.CreateCampaignTest"/>
+        <method signature="CreateContactTest.doit()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="doit" class="com.crm.comcast.contactTest.CreateContactTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="21049" started-at="2022-06-20T23:19:12 IST" finished-at="2022-06-20T23:19:33 IST">
-      <class name="com.crm.comcast.campaignTest.CreateCampaignTest">
-        <test-method status="PASS" signature="databaseconnection()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="databaseconnection" is-config="true" duration-ms="8" started-at="2022-06-20T23:19:12 IST" finished-at="2022-06-20T23:19:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- databaseconnection -->
-        <test-method status="PASS" signature="executiontype()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="executiontype" is-config="true" duration-ms="1" started-at="2022-06-20T23:19:12 IST" finished-at="2022-06-20T23:19:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executiontype -->
-        <test-method status="PASS" signature="getbrowser()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="getbrowser" is-config="true" duration-ms="2888" started-at="2022-06-20T23:19:12 IST" finished-at="2022-06-20T23:19:15 IST">
+    <test name="Test_firefox(failed)(failed)" duration-ms="76000" started-at="2022-07-11T01:32:31 IST" finished-at="2022-07-11T01:33:47 IST">
+      <class name="com.crm.comcast.contactTest.DeletContactTest">
+        <test-method status="PASS" signature="getbrowser()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="getbrowser" is-config="true" duration-ms="2243" started-at="2022-07-11T01:33:13 IST" finished-at="2022-07-11T01:33:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getbrowser -->
-        <test-method status="PASS" signature="applicationlogin()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="applicationlogin" is-config="true" duration-ms="5905" started-at="2022-06-20T23:19:15 IST" finished-at="2022-06-20T23:19:21 IST">
+        <test-method status="PASS" signature="applicationlogin()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="applicationlogin" is-config="true" duration-ms="7274" started-at="2022-07-11T01:33:15 IST" finished-at="2022-07-11T01:33:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationlogin -->
-        <test-method status="PASS" signature="createcamp()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="createcamp" duration-ms="9943" started-at="2022-06-20T23:19:21 IST" finished-at="2022-06-20T23:19:31 IST">
+        <test-method status="PASS" signature="deletit()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="deletit" duration-ms="21887" started-at="2022-07-11T01:33:22 IST" finished-at="2022-07-11T01:33:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createcamp -->
-        <test-method status="PASS" signature="logoutapplication()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="logoutapplication" is-config="true" duration-ms="1520" started-at="2022-06-20T23:19:31 IST" finished-at="2022-06-20T23:19:32 IST">
+        </test-method> <!-- deletit -->
+        <test-method status="PASS" signature="logoutapplication()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="logoutapplication" is-config="true" duration-ms="2147" started-at="2022-07-11T01:33:44 IST" finished-at="2022-07-11T01:33:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutapplication -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="closebrowser" is-config="true" duration-ms="750" started-at="2022-06-20T23:19:32 IST" finished-at="2022-06-20T23:19:33 IST">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.crm.comcast.contactTest.DeletContactTest@491cc5c9]" name="closebrowser" is-config="true" duration-ms="795" started-at="2022-07-11T01:33:46 IST" finished-at="2022-07-11T01:33:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="executioncompleted()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="executioncompleted" is-config="true" duration-ms="1" started-at="2022-06-20T23:19:33 IST" finished-at="2022-06-20T23:19:33 IST">
+      </class> <!-- com.crm.comcast.contactTest.DeletContactTest -->
+      <class name="com.crm.comcast.contactTest.CreateContactTest">
+        <test-method status="PASS" signature="databaseconnection()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="databaseconnection" is-config="true" duration-ms="12" started-at="2022-07-11T01:32:31 IST" finished-at="2022-07-11T01:32:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- databaseconnection -->
+        <test-method status="PASS" signature="executiontype()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="executiontype" is-config="true" duration-ms="1" started-at="2022-07-11T01:32:31 IST" finished-at="2022-07-11T01:32:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executiontype -->
+        <test-method status="PASS" signature="getbrowser()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="getbrowser" is-config="true" duration-ms="6158" started-at="2022-07-11T01:32:31 IST" finished-at="2022-07-11T01:32:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getbrowser -->
+        <test-method status="PASS" signature="applicationlogin()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="applicationlogin" is-config="true" duration-ms="8476" started-at="2022-07-11T01:32:37 IST" finished-at="2022-07-11T01:32:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationlogin -->
+        <test-method status="PASS" signature="doit()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="doit" duration-ms="23119" started-at="2022-07-11T01:32:46 IST" finished-at="2022-07-11T01:33:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doit -->
+        <test-method status="PASS" signature="logoutapplication()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="logoutapplication" is-config="true" duration-ms="2970" started-at="2022-07-11T01:33:09 IST" finished-at="2022-07-11T01:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutapplication -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="closebrowser" is-config="true" duration-ms="818" started-at="2022-07-11T01:33:12 IST" finished-at="2022-07-11T01:33:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="executioncompleted()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="executioncompleted" is-config="true" duration-ms="1" started-at="2022-07-11T01:33:47 IST" finished-at="2022-07-11T01:33:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executioncompleted -->
-        <test-method status="PASS" signature="closedatabase()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@76a3e297]" name="closedatabase" is-config="true" duration-ms="1" started-at="2022-06-20T23:19:33 IST" finished-at="2022-06-20T23:19:33 IST">
+        <test-method status="PASS" signature="closedatabase()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@eafc191]" name="closedatabase" is-config="true" duration-ms="1" started-at="2022-07-11T01:33:47 IST" finished-at="2022-07-11T01:33:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedatabase -->
-      </class> <!-- com.crm.comcast.campaignTest.CreateCampaignTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.comcast.contactTest.CreateContactTest -->
+    </test> <!-- Test_firefox(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [suite]] -->
 </testng-results>

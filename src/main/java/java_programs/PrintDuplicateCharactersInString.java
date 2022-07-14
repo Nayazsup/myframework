@@ -6,6 +6,8 @@ public class PrintDuplicateCharactersInString {
 
 	public static void main(String[] args) {
 		String s="india";
+	String sub = s.substring(2, 5);
+	System.out.println(sub);
 		LinkedHashSet<Character> set=new LinkedHashSet<Character>();
 		for (int i = 0; i < s.length(); i++) 
 		{
