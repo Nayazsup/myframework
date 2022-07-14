@@ -66,7 +66,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>group.xml</suiteXmlFile>
+						<suiteXmlFile>completeBatch.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
